@@ -28,7 +28,7 @@
 # RRA:AVERAGE:0.5:60:2880
 
 
-Example of a Round-Robin DB meant to store data for two nodes
+#Example of a Round-Robin DB meant to store data for two nodes
 rrdtool create $1 \
 --step 300 \
 DS:N1_TEMPRATING:GAUGE:600:0:U \
