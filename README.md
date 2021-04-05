@@ -1,2 +1,2 @@
 # elrond-monitor
-Monitoring and reporting the health sattus of an Elrond node
+Monitoring and reporting the health status of an Elrond node
