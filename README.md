@@ -68,7 +68,7 @@ Customize the scripts with your own system's details:
 - Customize script `02_create_RRD_db_API.sh` with the number of nodes you want to monitor / graph. This script assumes you will be monitoring exactly TWO nodes, so if you want more / less you'll have to go throuygh the script and adjust it as well.
 - Customize script `03_periodic_data_collector.sh` with the `PRODUCTION_INTERFACE`,`RRD_LOCATION` and `ELROND_USER_HOME_FOLDER` variables
 - Customize script `04_periodic_data_collector_elrond_api.sh` with the `RRD_LOCATION` and the `ELROND_NODE_x_BLS` keys for all servers you want to monitor. This script assumes you will be monitoring exactly TWO nodes, so if you want more / less you'll have to go throuygh the script and adjust it as well.
-- Customize script `05_generate_graphs.sh` with the `RRD_LOCATION` and `GRAPHS_LOCATION` variables
+- Customize script `05_generate_graphs.sh` with the `RRD_LOCATION` and `GRAPHS_LOCATION` variables.
 - Customize script `06_generate_graphs_api.sh` with the `RRD_LOCATION` and `GRAPHS_LOCATION` variables. This script assumes you will be creating graphs for exactly TWO nodes, so if you want more / less you'll have to go throuygh the script and adjust it as well.
 - Customize script `07_email_reports.sh` with the `HOSTNAME`,`GRAPHS_FOLDER`, and `EMAIL` variables
 
@@ -109,3 +109,12 @@ They have been tested on a BMS with:
 - 8-core Intel Xeon E3-1230v6 CPU
 - 32GB RAM
 - 2 x 2TB SATA hard-disks in a RAID1 configuration
+
+## Example graphs created by this solution ##
+Here are a few examples from a server that runs TWO nodes. 
+They all have a big title and thick lines, so they are rendered well on a mobile phone screen.
+![Example graph - 01_connected_peers.png](example_01_connected_peers.png "Example graph - 01_connected_peers.png")
+
+![Example graph - 03_elrond_network_status.png](example_03_elrond_network_status.png "Example graph - 03_elrond_network_status.png")
+
+![Example graph - 13_mbps.png](example_13_mbps.png "Example graph - 13_mbps.png")
